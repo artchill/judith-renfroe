@@ -875,7 +875,7 @@ img { max-width: 100%; display: block; }
 }
 .footer-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   padding: 3rem 0 2rem;
   align-items: center;
@@ -887,6 +887,13 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   margin: 0;
   font-size: 0.95rem;
+}
+.footer-copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.7;
 }
 .footer-credit {
   text-align: right;
