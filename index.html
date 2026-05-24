@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judith Renfroe — Author of Goodnight Honey Bear & The Beach</title>
+  <meta name="description" content="Official website of author Judith Renfroe. Explore her warm, family-centered children's books: 'Goodnight Honey Bear' and 'The Beach'." />
+
+  <!-- Fonts: Fraunces (warm storybook serif) + Nunito (rounded body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========  DECORATIVE BACKGROUND (stars + glow)  ========== -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="star s1"></div>
+    <div class="star s2"></div>
+    <div class="star s3"></div>
+    <div class="star s4"></div>
+    <div class="star s5"></div>
+    <div class="star s6"></div>
+    <div class="star s7"></div>
+    <div class="moon-glow"></div>
+  </div>
+
+  <!-- ==========  NAVIGATION  ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="brand" data-link="home">
+        <!-- Tiny honey-bear-meets-shell logo mark -->
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="22" r="11" fill="currentColor" opacity="0.85"/>
+          <circle cx="12" cy="13" r="4" fill="currentColor" opacity="0.85"/>
+          <circle cx="28" cy="13" r="4" fill="currentColor" opacity="0.85"/>
+          <circle cx="20" cy="22" r="6" fill="var(--surface)" opacity="0.6"/>
+        </svg>
+        <span class="brand-name">Judith Renfroe</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="#home"     data-link="home">Home</a></li>
+        <li><a href="#books"    data-link="books">Books</a></li>
+        <li><a href="#author"   data-link="author">Meet the Author</a></li>
+        <li><a href="#reviews"  data-link="reviews">Reviews</a></li>
+        <li><a href="#media"    data-link="media">Media</a></li>
+        <li><a href="#contact"  data-link="contact">Contact</a></li>
+      </ul>
+
+      <!-- Theme toggle (top right) -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========  HOME  ========== -->
+    <section id="home" class="page page--active">
+      <div class="hero">
+        <div class="hero-grid container">
+          <div class="hero-text">
+            <p class="eyebrow">Stories from the heart</p>
+            <h1 class="hero-title">
+              Welcome to the warm, <span class="accent">starlit</span> world of
+              <span class="signature">Judith Renfroe</span>
+            </h1>
+            <p class="hero-lede">
+              Tender bedtime tales and sunlit shores — two little books, written with love
+              for the children we tuck in and the grandchildren who run beside us through the waves.
+            </p>
+            <div class="hero-cta">
+              <a href="#books" class="btn btn--primary" data-link="books">Explore the Books</a>
+              <a href="#author" class="btn btn--ghost" data-link="author">Meet the Author</a>
+            </div>
+          </div>
+
+          <!-- Decorative hero illustration: moon, stars, sea, no faces -->
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="moonGrad" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%"  stop-color="var(--honey-light)"/>
+                  <stop offset="100%" stop-color="var(--honey)"/>
+                </radialGradient>
+                <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--ocean-light)"/>
+                  <stop offset="100%" stop-color="var(--ocean)"/>
+                </linearGradient>
+              </defs>
+
+              <!-- soft moon -->
+              <circle cx="320" cy="150" r="90" fill="url(#moonGrad)" opacity="0.9"/>
+              <circle cx="295" cy="135" r="90" fill="var(--surface)" opacity="0.55"/>
+
+              <!-- twinkles -->
+              <g fill="var(--honey)">
+                <path d="M120 80 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 z"/>
+                <path d="M200 200 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+                <path d="M80 220 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+                <path d="M420 280 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+              </g>
+
+              <!-- ocean waves -->
+              <path d="M0,340 C80,310 160,370 240,340 C320,310 400,370 480,340 L480,480 L0,480 Z" fill="url(#seaGrad)" opacity="0.85"/>
+              <path d="M0,380 C80,350 160,410 240,380 C320,350 400,410 480,380 L480,480 L0,480 Z" fill="var(--ocean)" opacity="0.6"/>
+
+              <!-- sand line + shells -->
+              <path d="M0,450 C120,440 240,460 360,445 C420,438 480,450 480,450 L480,480 L0,480 Z" fill="var(--sand)"/>
+              <g transform="translate(110 445)" fill="var(--honey-light)">
+                <path d="M0,0 Q8,-14 16,0 Q12,-2 8,-2 Q4,-2 0,0 Z"/>
+              </g>
+              <g transform="translate(380 452)" fill="var(--honey)">
+                <path d="M0,0 Q10,-18 20,0 Q15,-2 10,-2 Q5,-2 0,0 Z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Books preview -->
+      <section class="featured container">
+        <div class="section-head">
+          <h2 class="section-title">Featured Books</h2>
+          <p class="section-sub">Two tender stories — one for bedtime, one for the shore.</p>
+        </div>
+
+        <div class="featured-grid">
+          <a href="#books" class="featured-card" data-link="books">
+            <div class="featured-cover">
+              <img src="https://raw.githubusercontent.com/artchill/judith-renfroe/main/honey%20goodnight.jpg" alt="Goodnight Honey Bear book cover" loading="lazy" onerror="this.parentElement.classList.add('cover-fallback'); this.style.display='none';" />
+              <div class="cover-placeholder">
+                <span>Goodnight</span>
+                <strong>Honey Bear</strong>
+              </div>
+            </div>
+            <div class="featured-meta">
+              <h3>Goodnight Honey Bear</h3>
+              <span class="tag">Bedtime · Family</span>
+            </div>
+          </a>
+
+          <a href="#books" class="featured-card" data-link="books">
+            <div class="featured-cover">
+              <img src="https://raw.githubusercontent.com/artchill/judith-renfroe/main/thebeach.jpg" alt="The Beach book cover" loading="lazy" onerror="this.parentElement.classList.add('cover-fallback'); this.style.display='none';" />
+              <div class="cover-placeholder">
+                <span>The</span>
+                <strong>Beach</strong>
+              </div>
+            </div>
+            <div class="featured-meta">
+              <h3>The Beach</h3>
+              <span class="tag">Coastal · Family</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <!-- ==========  BOOKS  ========== -->
+    <section id="books" class="page">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The Books</p>
+          <h2 class="section-title">A small library, written with love</h2>
+        </div>
+
+        <!-- Book 1 -->
+        <article class="book-card">
+          <div class="book-cover">
+            <img src="https://raw.githubusercontent.com/artchill/judith-renfroe/main/honey%20goodnight.jpg" alt="Goodnight Honey Bear cover" loading="lazy" onerror="this.parentElement.classList.add('cover-fallback'); this.style.display='none';" />
+            <div class="cover-placeholder large">
+              <span>Goodnight</span>
+              <strong>Honey Bear</strong>
+            </div>
+          </div>
+
+          <div class="book-info">
+            <span class="tag tag--honey">Children's Bedtime Story · Family</span>
+            <h3 class="book-title">Goodnight Honey Bear</h3>
+            <p class="book-isbn"><strong>ISBN-13:</strong> 979-8895314425</p>
+            <p class="book-synopsis">
+              "The book that I have told you about, <em>Goodnight Honey Bear</em>, was inspired by a flight
+              from Fort Myers, Florida, to Pittsburgh. I had heard music which reminded me of my mother,
+              and therefore reminded me of my daughter Heather, and how she would always say to her youngest,
+              <em>‘Good night, honey bear.’</em> I wrote that book on the 2½-hour flight, and I'm happy I did —
+              it means a lot to me."
+            </p>
+            <div class="purchase">
+              <a href="#" class="btn btn--buy">Amazon Kindle</a>
+              <a href="#" class="btn btn--buy">Paperback</a>
+              <a href="#" class="btn btn--buy">Hardcover</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Decorative divider -->
+        <div class="divider" aria-hidden="true">
+          <svg viewBox="0 0 200 20"><path d="M0,10 Q50,0 100,10 T200,10" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+        </div>
+
+        <!-- Book 2 -->
+        <article class="book-card reverse">
+          <div class="book-cover">
+            <img src="https://raw.githubusercontent.com/artchill/judith-renfroe/main/thebeach.jpg" alt="The Beach cover" loading="lazy" onerror="this.parentElement.classList.add('cover-fallback'); this.style.display='none';" />
+            <div class="cover-placeholder large">
+              <span>The</span>
+              <strong>Beach</strong>
+            </div>
+          </div>
+
+          <div class="book-info">
+            <span class="tag tag--ocean">Children's Fiction · Family</span>
+            <h3 class="book-title">The Beach</h3>
+            <p class="book-isbn"><strong>ISBN-13:</strong> 979-8895314883</p>
+            <p class="book-synopsis">
+              "Fun times at the beach with the children — and then realizing I had a new pair of hands
+              at the beach to help jump the waves when I had my grandchildren."
+            </p>
+            <div class="purchase">
+              <a href="#" class="btn btn--buy">Amazon Kindle</a>
+              <a href="#" class="btn btn--buy">Paperback</a>
+              <a href="#" class="btn btn--buy">Hardcover</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========  MEET THE AUTHOR  ========== -->
+    <section id="author" class="page">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Meet the Author</p>
+          <h2 class="section-title">Judith Renfroe</h2>
+        </div>
+
+        <div class="author-grid">
+          <!-- Thematic decoration card (NO author face) -->
+          <div class="author-art" aria-hidden="true">
+            <svg viewBox="0 0 360 420" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="halo" cx="50%" cy="40%" r="55%">
+                  <stop offset="0%"  stop-color="var(--honey-light)" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="var(--honey-light)" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- soft halo -->
+              <circle cx="180" cy="170" r="150" fill="url(#halo)"/>
+
+              <!-- crescent moon -->
+              <g transform="translate(70 60)">
+                <circle cx="0" cy="0" r="34" fill="var(--honey)"/>
+                <circle cx="10" cy="-5" r="32" fill="var(--surface)"/>
+              </g>
+
+              <!-- teddy bear silhouette (no face) -->
+              <g transform="translate(180 200)" fill="var(--honey-deep)">
+                <circle cx="0" cy="0" r="48"/>
+                <circle cx="-38" cy="-38" r="18"/>
+                <circle cx="38" cy="-38" r="18"/>
+                <ellipse cx="0" cy="60" rx="60" ry="42"/>
+                <ellipse cx="-46" cy="78" rx="16" ry="22"/>
+                <ellipse cx="46" cy="78" rx="16" ry="22"/>
+              </g>
+
+              <!-- twinkling stars -->
+              <g fill="var(--honey)">
+                <path d="M40 200 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 z"/>
+                <path d="M310 120 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+                <path d="M300 260 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+              </g>
+
+              <!-- waves -->
+              <path d="M0,360 C60,340 120,380 180,360 C240,340 300,380 360,360 L360,420 L0,420 Z" fill="var(--ocean-light)" opacity="0.85"/>
+              <path d="M0,385 C60,370 120,405 180,385 C240,370 300,405 360,385 L360,420 L0,420 Z" fill="var(--ocean)" opacity="0.7"/>
+
+              <!-- shells -->
+              <g transform="translate(80 395)" fill="var(--honey-light)">
+                <path d="M0,0 Q10,-18 20,0 Q15,-3 10,-3 Q5,-3 0,0 Z"/>
+                <path d="M4,-2 L10,-12 M10,-12 L16,-2" stroke="var(--honey)" stroke-width="1" fill="none"/>
+              </g>
+              <g transform="translate(250 400)" fill="var(--surface)">
+                <path d="M0,0 Q9,-16 18,0 Q13,-3 9,-3 Q5,-3 0,0 Z"/>
+              </g>
+            </svg>
+          </div>
+
+          <div class="author-bio">
+            <p class="bio-lead">
+              I am Judith Renfroe. I live in <strong>Key West, Florida</strong> —
+              a place where the moon hangs low over the water and the days are full of small wonders.
+            </p>
+            <p>
+              I enjoy writing, and I look forward to having several books published in the near future.
+              My stories grow out of the people I love most: my children, my grandchildren, and the quiet
+              moments we share — at bedtime, by the shore, anywhere love finds room to breathe.
+            </p>
+            <p class="bio-quote">
+              "Loving, caring, giving, sharing — and spreading love and good wishes everywhere I go."
+            </p>
+
+            <!-- Decorative motifs row -->
+            <ul class="motif-row" aria-hidden="true">
+              <li title="Stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.5L21 9l-5 4 1.5 7L12 16l-5.5 4L8 13 3 9l6.6-.5L12 2z" fill="currentColor"/></svg></li>
+              <li title="Honey"><svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7l9-5z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></li>
+              <li title="Wave"><svg viewBox="0 0 24 24"><path d="M2 14 C6 10, 10 18, 14 14 S22 10, 22 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></li>
+              <li title="Shell"><svg viewBox="0 0 24 24"><path d="M12 3 Q4 16 12 21 Q20 16 12 3 Z M12 21 L12 8 M8 18 L16 18 M9 14 L15 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========  REVIEWS  ========== -->
+    <section id="reviews" class="page">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Reviews</p>
+          <h2 class="section-title">Words from readers</h2>
+          <p class="section-sub">What families are saying about Judith's gentle stories.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <figure class="review">
+            <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7H7zm10 0c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7h-3z" fill="currentColor"/></svg>
+            <blockquote>
+              Reading <em>Goodnight Honey Bear</em> with my little one has become the most peaceful part of
+              our evening. There's a tenderness in every line — you can feel the love that wrote it.
+            </blockquote>
+            <figcaption>
+              <span class="stars">★★★★★</span>
+              <strong>Maren H.</strong>
+              <span class="role">Mother of two</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7H7zm10 0c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7h-3z" fill="currentColor"/></svg>
+            <blockquote>
+              <em>The Beach</em> brought back a flood of sunlit memories. My grandchildren ask for it again
+              and again, and every time we read it, we end up laughing about jumping the waves together.
+            </blockquote>
+            <figcaption>
+              <span class="stars">★★★★★</span>
+              <strong>Dwight P.</strong>
+              <span class="role">Grandfather</span>
+            </figcaption>
+          </figure>
+
+          <figure class="review">
+            <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7H7zm10 0c-2 0-4 2-4 5s2 5 4 5 3-1 3-3-1-2-2-2 0-3 2-3V7h-3z" fill="currentColor"/></svg>
+            <blockquote>
+              Judith writes the way grandmothers love — softly, completely, and without hurry.
+              These are books to read together, then keep on the shelf and read again next year.
+            </blockquote>
+            <figcaption>
+              <span class="stars">★★★★★</span>
+              <strong>Renee J.</strong>
+              <span class="role">Children's librarian</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========  MEDIA  ========== -->
+    <section id="media" class="page">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Media</p>
+          <h2 class="section-title">Interviews, readings & press</h2>
+          <p class="section-sub">A growing collection of conversations and storytime moments.</p>
+        </div>
+
+        <div class="media-grid">
+          <article class="media-card">
+            <div class="media-thumb">
+              <svg viewBox="0 0 100 60" aria-hidden="true">
+                <rect width="100" height="60" fill="var(--honey-light)"/>
+                <circle cx="50" cy="30" r="14" fill="var(--surface)" opacity="0.9"/>
+                <path d="M46 22 L46 38 L60 30 Z" fill="var(--honey-deep)"/>
+              </svg>
+            </div>
+            <div class="media-body">
+              <span class="tag tag--honey">Interview</span>
+              <h3>An Author's Quiet Joys</h3>
+              <p>Judith shares the story behind <em>Goodnight Honey Bear</em> — and the flight that started it all.</p>
+              <a href="#" class="link-arrow">Coming soon →</a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-thumb">
+              <svg viewBox="0 0 100 60" aria-hidden="true">
+                <rect width="100" height="60" fill="var(--ocean-light)"/>
+                <path d="M0,42 C20,36 40,48 60,42 C80,36 100,48 100,48 L100,60 L0,60 Z" fill="var(--ocean)"/>
+                <circle cx="50" cy="28" r="14" fill="var(--surface)" opacity="0.9"/>
+                <path d="M46 20 L46 36 L60 28 Z" fill="var(--ocean)"/>
+              </svg>
+            </div>
+            <div class="media-body">
+              <span class="tag tag--ocean">Book Reading</span>
+              <h3>Storytime at the Shore</h3>
+              <p>A recorded reading of <em>The Beach</em>, perfect for cozy afternoons with little ones.</p>
+              <a href="#" class="link-arrow">Coming soon →</a>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-thumb">
+              <svg viewBox="0 0 100 60" aria-hidden="true">
+                <rect width="100" height="60" fill="var(--sand)"/>
+                <circle cx="30" cy="22" r="9" fill="var(--honey)"/>
+                <circle cx="70" cy="38" r="6" fill="var(--honey-deep)"/>
+                <path d="M20 50 L80 50" stroke="var(--honey-deep)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="media-body">
+              <span class="tag">Press</span>
+              <h3>Featured in Family Reads</h3>
+              <p>A feature on heartfelt children's books written by grandparents who write what they live.</p>
+              <a href="#" class="link-arrow">Coming soon →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========  CONTACT  ========== -->
+    <section id="contact" class="page">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Say hello</h2>
+          <p class="section-sub">Notes from readers and friends are always welcome.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name
+              <input type="text" id="cf-name" name="name" required placeholder="Your name" />
+            </label>
+            <label for="cf-email">Email
+              <input type="email" id="cf-email" name="email" required placeholder="you@example.com" />
+            </label>
+          </div>
+          <label for="cf-subject">Subject
+            <input type="text" id="cf-subject" name="subject" required placeholder="What's on your mind?" />
+          </label>
+          <label for="cf-message">Message
+            <textarea id="cf-message" name="message" rows="6" required placeholder="Write your note here..."></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--wide">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========  FOOTER  ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Judith Renfroe</span>
+        <p class="footer-tag">Bedtime stories &amp; sunlit shores.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home"    data-link="home">Home</a>
+        <a href="#books"   data-link="books">Books</a>
+        <a href="#author"  data-link="author">Author</a>
+        <a href="#reviews" data-link="reviews">Reviews</a>
+        <a href="#media"   data-link="media">Media</a>
+        <a href="#contact" data-link="contact">Contact</a>
+      </nav>
+
+      <p class="footer-credit">
+        © <span id="year"></span> Judith Renfroe. All rights reserved.<br />
+        <span class="dev-credit">Developed by <strong>Artchelo Design.</strong></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
